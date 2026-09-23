@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getBackendUrl(): string {
-  return process.env.NEXT_PUBLIC_BACKEND_URL || process.env.BACKEND_URL || "http://localhost:5000";
+  return process.env.NEXT_PUBLIC_BACKEND_URL || process.env.BACKEND_URL || "https://youtube-backend-n2km.onrender.com";
 }
 
 export function getMediaUrl(filepath?: string): string {

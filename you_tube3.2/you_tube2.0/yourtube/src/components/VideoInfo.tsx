@@ -129,7 +129,7 @@ const VideoInfo = ({ video }: any) => {
         window.URL.revokeObjectURL(url);
       } catch (blobErr) {
         // Direct download fallback
-        const fallbackUrl = `${(process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000").replace(/\/$/, "")}/download/file/${video._id}`;
+        const fallbackUrl = `${(process.env.NEXT_PUBLIC_BACKEND_URL || "https://youtube-backend-n2km.onrender.com").replace(/\/$/, "")}/download/file/${video._id}`;
         const a = document.createElement("a");
         a.href = fallbackUrl;
         a.setAttribute("download", res.data.filename || `${video.videotitle || "video"}.mp4`);
